@@ -1,10 +1,12 @@
 <html>
     <head>
         <title>{{ title }} - Rock Paper Scissors!</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}"
-
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
     </head>
-    <body></body>
+    <body>
+        <header>
+            <h1>Let's Play Rock, Paper, Scissors!</h1>
+        </header>
         {% block content %}
 
         {% endblock %}
