@@ -16,7 +16,6 @@ def play(choice1, choice2):
 
     game = Game(player_1, player_2)
     winner = game.play_rock_paper_scissors()
-
     return render_template("result.html", title="Results", player_1 = player_1.name, player_2 = player_2.name, choice1 = choice1, choice2 = choice2, winner= winner)
 
     
