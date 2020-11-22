@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
+
 {% if winner != None %}
 <section class="results-text">
     <p>Here's the result of your game:</p>
 
-    <p>{{ player_1 }} picked {{ choice1|upper }}.</p>
+    <p>{{ player_1 }} picked {{ move1|upper }}.</p>
 
-    <p>{{ player_2 }} picked {{ choice2|upper }}.</p>
+    <p>{{ player_2 }} picked {{ move2|upper }}.</p>
 
     <p>The winner is: {{ winner }}!</p>
 
@@ -17,7 +18,6 @@
 
     <p>It's a draw! Try again.</p>
 </section>
-
 {% endif %}
 
 {% endblock %}

@@ -5,17 +5,24 @@
     </head>
     <body>
         <header>
-                <img src="{{ url_for('static', filename='images/rock-paper-scissors-hand-icons.png') }}" alt="Rock Paper Scissors Illustration">
-                <nav class="image-links">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/rules">Rules</a></li>
+                <nav>
+                    <ul id="nav-links">
+                        <li><a href="/">RULES</a></li>
+                        <li><a href="/play">PLAY</a></li>
+                        
                     </ul>
                 </nav>
-           
+                <h1 id="heading">LET'S PLAY ROCK, PAPER, SCISSORS!</h1>
+
+                <img class="icon" src="{{ url_for('static', filename='images/white_rock_icon.png') }}" alt="rock icon">
             
-            <hr>
-            <h1>Let's Play Rock, Paper, Scissors!</h1>
+                <img class="icon" src="{{ url_for('static', filename='images/white_paper_icon.png') }}" alt="paper icon">
+            
+                <img class="icon" src="{{ url_for('static', filename='images/white_scissors_icon.png') }}" alt="scissors icon">
+                </div>
+                
+           
+                
             
         </header>
         
@@ -23,5 +30,9 @@
         {% block content %}
 
         {% endblock %}
+
+        <footer>
+           
+        </footer>
     </body>
 </html>

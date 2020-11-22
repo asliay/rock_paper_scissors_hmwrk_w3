@@ -1,1 +1,18 @@
 {% extends "base.html" %}
+
+{% block content %}
+
+<form action="/play_the_computer" method="post">
+    <label for="name"></label>
+    <input type="text" name="name" id="name" placeholder="What's your name?" required><br>
+
+    <label for="move"></label>
+    <select name="move" id="move" placeholder="Select your Move!">
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+    </select>
+
+    <input type="submit" value="Play Game">
+
+    {% endblock %}
