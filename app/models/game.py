@@ -4,6 +4,7 @@ class Game():
         self.first_player = first_player
         self.second_player = second_player
 
+# Compares the possible results and returns winner
     def play_rock_paper_scissors(self):
         if self.first_player.hand == "rock" and self.second_player.hand == "scissors":
             return self.first_player.name
